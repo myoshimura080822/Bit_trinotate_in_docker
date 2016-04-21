@@ -96,6 +96,5 @@ env PATH /trinity:/blast/ncbi-blast-2.2.29+/bin:/trinotate:/transdecoder:$PATH
 
 VOLUME ["/export/", "/data/", "/var/lib/docker"]
 
-ENTRYPOINT ["/sbin/my_init","/bin/bash"]
-#ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["/sbin/my_init","--"]
 
